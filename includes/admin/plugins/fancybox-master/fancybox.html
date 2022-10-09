@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My page</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/jquery.fancybox.min.css">
+</head>
+<body>
+
+	<!-- Your HTML content goes here -->
+	<a href="image.jpg" data-fancybox data-caption="Caption for single image" id="fancy_box">
+		<img src="thumbnail.jpg" alt="" style="height: 100px;" />
+	</a>
+	
+	<a data-fancybox data-type="iframe" data-src="http://contents.tacticalasia.com/download/511-Tactical-Catalog-2012.pdf" href="javascript:;">
+		Example #3 - Sample PDF file
+	</a>
+
+	
+	<p><a class="iframe" href="http://contents.tacticalasia.com/download/511-Tactical-Catalog-2012.pdf">Zero</a></p>
+	
+	
+	<!-- JS -->
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="dist/jquery.fancybox.min.js"></script>
+	
+	<script>
+		$('#fancy_box').fancybox({
+			// Options will go here
+		});
+	</script>
+	
+</body>
+</html>
